@@ -12,22 +12,19 @@
 /*Class Composes*/
 .otherClassName {
     composes: className;
+    width: 220px;
+    height: 60px;
+    line-height: 60px;
     border-width: 2px;
     border-style: solid;
-    max-width: 400px;
-    font-size: 22px;
 }
 
 /*Composes Overrides*/
 .background {
-    width: 220px;
-    height: 60px;
-    line-height: 60px;
     border-radius: 20px;
     background: #efefef;
     composes: otherClassName;
     border-style: dotted;
-    border-color: green;
 }    
 
 /*Scoped Animations*/
