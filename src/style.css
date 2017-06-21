@@ -36,10 +36,10 @@
 
 /*Define variables*/
 @value colors: "./colors.css";
-@value color1, color2 from colors;
+@value color, fontSize from colors;
 
 .color {
 	composes: otherClassName;
-	color: color1;
-	background: color2;
+	color: color;
+	font-size: fontSize;
 }
