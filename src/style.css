@@ -1,0 +1,48 @@
+/*Scoped Selectors*/
+.className {
+    color: green;
+    margin: 10px 0;
+}
+
+/*Global Selectors*/
+:global(.text) {
+    font-size: 22px;
+}
+
+/*Class Composes*/
+.otherClassName {
+    composes: className;
+    border-width: 2px;
+    border-style: solid;
+    max-width: 400px;
+    font-size: 22px;
+}
+
+/*Composes Overrides*/
+.background {
+    width: 220px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 20px;
+    background: #efefef;
+    composes: otherClassName;
+    border-style: dotted;
+    border-color: green;
+}    
+
+/*Scoped Animations*/
+.backgroundAnimation {
+	composes: background;
+	composes: tada from './animation.css';
+}
+
+
+/*Define variables*/
+@value colors: "./colors.css";
+@value color1, color2 from colors;
+
+.color {
+	composes: otherClassName;
+	color: color1;
+	background: color2;
+}
