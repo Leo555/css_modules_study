@@ -286,6 +286,6 @@ CSS Modules 解决了哪些问题呢？
 
 ## 参考资料
 
-[CSS Modules 详解及 React 中实践](https://github.com/camsong/blog/issues/5)
-[css-modules](https://github.com/css-modules/css-modules)
-[CSS Modules 用法教程](http://www.ruanyifeng.com/blog/2016/06/css_modules.html)
+1. [CSS Modules 详解及 React 中实践](https://github.com/camsong/blog/issues/5)
+2. [css-modules](https://github.com/css-modules/css-modules)
+3. [CSS Modules 用法教程](http://www.ruanyifeng.com/blog/2016/06/css_modules.html)
